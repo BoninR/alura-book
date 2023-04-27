@@ -1,0 +1,139 @@
+.carrossel__titulo{
+    color: var(--cor--laranja);
+    font-family: var(--font--poppins);
+    background-color: var(--cor--braca);
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 7% 0 3% 0;
+}
+
+.swiper-slide img {
+    width: 100%;    
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: 2% 0;
+}
+
+.card{
+    font-family: var(--font--poppins);
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 3%;
+    background-color: var(--cor--braca);
+    padding: 3%;
+    border-radius: 10px;
+    color: var(--cor--azul);
+    box-shadow: 0 2px 2px rgba(0,0,0,25);
+}
+.card__descricao{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.descricao__titulo{
+    color: var(--cor--laranja);
+    font-weight: 700;
+}
+
+.descricao__titulo__segundo{
+    font-weight:700;
+    font-size: 1.1rem;
+}
+
+.descricao__texto{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.card__icone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.card__saibamais{
+    text-decoration: none;
+    background-color: var(--cor--laranja);
+    padding: 1em 2em;
+
+}
+
+.card__icone__img{
+    height: 70%;
+    margin: 0 0 10% 0;
+}
+
+.card__descricao__estrela{
+    background-image: url("../img/estrela.svg 4.svg");
+}
+.card__padding{
+    padding-bottom: 2%;
+}
+
+@media screen and (min-width:1024px) {
+
+    .swiper-pagination{
+        padding: 2% 0 5% 0;
+    }
+    .swiper{
+        width: 60%;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+    .card{
+        width: 40%;
+        margin: 2% auto;
+    }
+    .carrossel__titulo{
+        padding: 4% 0 2% 0;
+        font-size: 1.63;
+    }
+}
+
+@media screen and (min-width:1728px) {
+
+    .carrossel__titulo{
+        font-size: 2rem;
+        padding: 3% 0 1.5% 0;
+        
+    }
+    .carrossel__tela__1728{
+        display: flex;
+        margin: 0 10vw 3em 10vw;
+        align-items: center;
+    }
+    .swiper-pagination{
+        margin: 1em 0;
+    }
+    .swiper{
+        width: 40%;
+    }
+
+    .card{
+        margin-top: 7%;
+        padding: 1.5%;
+    }
+    .descricao__titulo{
+        font-size: 2rem;
+
+    }
+    .descricao__texto{
+        font-size: 1rem;
+    }
+    .card__descricao{
+        margin: 1%;
+    }
+
+}
